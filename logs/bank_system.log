@@ -1,0 +1,18 @@
+2026-04-26 21:21:51 [main] INFO  org.example.CheckingAccount - Yˆu c?u r£t ti?n t? TK v?ng lai 1: $2000.0
+2026-04-26 21:21:51 [main] WARN  org.example.CheckingAccount - Giao d?ch r£t ti?n t? TK 1 b? t? ch?i: S? d? t…i kho?n kh“ng ?? $2000.00 ?? th?c hi?n giao d?ch
+2026-04-26 21:21:51 [main] INFO  org.example.CheckingAccount - Yˆu c?u r£t ti?n t? TK v?ng lai 1: $400.0
+2026-04-26 21:21:51 [main] INFO  org.example.CheckingAccount - R£t ti?n th…nh c“ng t? TK 1. S? d? c•n l?i: $600.0
+2026-04-26 21:21:51 [main] INFO  org.example.CheckingAccount - Yˆu c?u n?p ti?n v…o TK v?ng lai 1: $500.0
+2026-04-26 21:21:51 [main] INFO  org.example.CheckingAccount - N?p ti?n th…nh c“ng v…o TK 1. S? d? hi?n t?i: $1500.0
+2026-04-26 21:22:00 [main] INFO  org.example.CheckingAccount - Yˆu c?u r£t ti?n t? TK v?ng lai 1: $2000.0
+2026-04-26 21:22:00 [main] WARN  org.example.CheckingAccount - Giao d?ch r£t ti?n t? TK 1 b? t? ch?i: S? d? t…i kho?n kh“ng ?? $2000.00 ?? th?c hi?n giao d?ch
+2026-04-26 21:22:00 [main] INFO  org.example.CheckingAccount - Yˆu c?u r£t ti?n t? TK v?ng lai 1: $400.0
+2026-04-26 21:22:00 [main] INFO  org.example.CheckingAccount - R£t ti?n th…nh c“ng t? TK 1. S? d? c•n l?i: $600.0
+2026-04-26 21:22:01 [main] INFO  org.example.CheckingAccount - Yˆu c?u n?p ti?n v…o TK v?ng lai 1: $500.0
+2026-04-26 21:22:01 [main] INFO  org.example.CheckingAccount - N?p ti?n th…nh c“ng v…o TK 1. S? d? hi?n t?i: $1500.0
+2026-04-26 21:31:41 [main] INFO  org.example.CheckingAccount - Yˆu c?u r£t ti?n t? TK v?ng lai 1: $2000.0
+2026-04-26 21:31:41 [main] WARN  org.example.CheckingAccount - Giao d?ch r£t ti?n t? TK 1 b? t? ch?i: S? d? t…i kho?n kh“ng ?? $2000.00 ?? th?c hi?n giao d?ch
+2026-04-26 21:31:41 [main] INFO  org.example.CheckingAccount - Yˆu c?u r£t ti?n t? TK v?ng lai 1: $400.0
+2026-04-26 21:31:41 [main] INFO  org.example.CheckingAccount - R£t ti?n th…nh c“ng t? TK 1. S? d? c•n l?i: $600.0
+2026-04-26 21:31:41 [main] INFO  org.example.CheckingAccount - Yˆu c?u n?p ti?n v…o TK v?ng lai 1: $500.0
+2026-04-26 21:31:41 [main] INFO  org.example.CheckingAccount - N?p ti?n th…nh c“ng v…o TK 1. S? d? hi?n t?i: $1500.0
