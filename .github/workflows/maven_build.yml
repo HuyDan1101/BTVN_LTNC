@@ -8,7 +8,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # 1. Cấu hình Matrix Strategy
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    # 2. Sử dụng biến matrix cho hệ điều hành
+    runs-on: ${{ matrix.os }}
 
     steps:
       - name: Checkout code
@@ -22,11 +28,12 @@ jobs:
           cache: maven
 
       - name: Build and Test with Maven
-        # Chạy vòng đời Maven: checkstyle -> test -> package
+        # Lệnh mvn clean package sẽ chạy đồng thời trên 3 máy ảo khác nhau
         run: mvn clean package
 
       - name: Archive production artifacts
-        if: success()
+        # Chỉ upload artifact từ máy Ubuntu để tránh bị trùng lặp file
+        if: matrix.os == 'ubuntu-latest' && success()
         uses: actions/upload-artifact@v4
         with:
           name: bank-system-jar
