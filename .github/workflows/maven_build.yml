@@ -8,11 +8,8 @@ on:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-
-    runs-on: ${{ matrix.os }}
+    # Quay lại dùng Ubuntu cho nhẹ và nhanh
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -26,20 +23,20 @@ jobs:
           cache: maven
 
       - name: Build and Verify with JaCoCo
-        # Bài 5 dùng 'verify' để JaCoCo kiểm tra rule 80% coverage
+        # Lệnh verify sẽ kích hoạt đồng thời: Checkstyle -> Test -> JaCoCo Check
         run: mvn clean verify
 
       - name: Archive production artifacts
-        if: matrix.os == 'ubuntu-latest' && success()
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: bank-system-jar
           path: target/*.jar
 
       - name: Upload JaCoCo Coverage Report
-        # Dùng always() để kể cả khi build fail do thiếu test, bạn vẫn có báo cáo để xem
+        # Luôn upload để xem báo cáo kể cả khi không đạt 80%
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: jacoco-report-${{ matrix.os }}
+          name: jacoco-report
           path: target/site/jacoco/
